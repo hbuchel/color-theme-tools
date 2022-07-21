@@ -1,0 +1,102 @@
+body {
+  line-height: var(--amplify-line-heights-small);
+}
+
+.swatch {
+  --background: #eee;
+  color: var(--background);
+  background: var(--background);
+  border: none;
+  width: var(--swatchWidth);
+  height: var(--swatchHeight);
+  transition: transform .2s ease-out;
+  position: relative;
+ 
+}
+
+.swatch:hover {
+  cursor: pointer;
+  box-shadow: var(--amplify-shadows-small);
+  transform: translate3d(0,-2px, 0);
+}
+.swatch--small {
+  --swatchWidth: 28px;
+  --swatchHeight: 28px;
+}
+
+
+.swatch--large {
+  --swatchWidth: 100%;
+  --swatchHeight: 80px;
+}
+
+.picker {
+  position: relative;
+}
+
+.picker.react-colorful {
+  width: 100%;
+}
+/* .picker .react-colorful__saturation {
+  border-radius: 0;
+} */
+/* .picker .react-colorful__last-control {
+  border-radius: 0;
+} */
+
+.mini-table {
+  --amplify-components-table-data-border-color: transparent;
+  table-layout: auto;
+  width: auto;
+}
+.mini-table td {
+  padding: 0 var(--amplify-space-large) var(--amplify-space-small) 0; 
+}
+.mini-table td:last-child {
+  padding-inline-end: 0;
+}
+
+.popover {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  border: none;
+  background: none;
+}
+.popover::backdrop {
+  background: none;
+}
+
+.popover__backdrop-wrapper {
+  position: absolute;
+  background: none;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.popover__backdrop {
+  position: absolute;
+  background: none;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+.popover__wrapper {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.popover__modal {
+ width: 300px;
+ margin: auto;
+ background: #fff;
+ box-shadow: var(--amplify-shadows-medium);
+ position: relative;
+ z-index: 1;
+ border-radius: var(--amplify-radii-large);
+ 
+}
